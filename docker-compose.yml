@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  wol_listener:
+    image: robbrad182/wol-docker-bridge
+    restart: unless-stopped
+    container_name: wol-docker-bridge
+    network_mode: "host"  # Use the host network mode
